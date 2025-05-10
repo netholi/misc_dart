@@ -3,8 +3,8 @@ class NumberGenerator {
 
   static Stream<int> _getNumber() async* {
     int num = 0;
-    while (true) {
-      await Future.delayed(Duration(seconds: 2));
+    while (num < 10) {
+      await Future.delayed(Duration(seconds: 1));
       yield num++;
     }
   }

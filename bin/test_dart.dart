@@ -1,4 +1,4 @@
-import 'package:test_stream/test_stream.dart';
+import 'package:test_dart/msic_lib.dart';
 
 void main() {
   var myStream = NumberGenerator().stream;
@@ -15,6 +15,6 @@ void main() {
   );
 
   Future.delayed(Duration(seconds: 5), () {
-    mySub.cancel();
+    //mySub.cancel();
   });
 }
